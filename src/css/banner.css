@@ -1,5 +1,5 @@
 .banner{
-    height: 90vh;
+    height: 85vh;
     object-fit: contain;
    
     color: white;
@@ -59,3 +59,35 @@
     top: 215px;
 }
 
+@media screen and (max-width:580px) {
+    .banner{
+        height: 35vh;
+    }
+   .banner_content{
+       padding-top: 90px;
+   }
+    .banner_title{
+        font-size: 1.5rem;
+    }
+    .banner_button{
+        padding: 0.5rem 2rem;
+    }
+    .banner_description{
+        font-size: 0.8rem;
+        max-width: fit-content;
+    }
+    .fade--bottom{
+        
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .banner_content{
+        padding-top: 120px;
+    }
+    .banner_description{
+        visibility: hidden;
+    }
+    
+}

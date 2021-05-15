@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
-    
+    object-fit: contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,10 +29,10 @@
     background: rgba(0, 0, 0, 0.8);
     height: 500px;
     width: 450px;
- 
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
     
     
   }
@@ -102,4 +102,42 @@
   .signup_link:hover{
     text-decoration: underline;
     cursor: pointer;
+  }
+
+  @media screen and (max-width:450px) {
+    .logo{
+      width: 100px;
+    }
+      .sign-in_container{
+        width: 350px;
+          height: 400px;
+          margin: auto;
+      }
+
+      .sign-in_content{
+        margin: 10px;
+      }
+      
+      .sign-in_form input{
+        width: 300px;
+      }
+      .sign-in_form button{
+        width: 300px;
+      }
+  }
+
+  @media screen and (max-width:350px) {
+    .logo{
+      width: 100px;
+    }
+    .sign-in_container{
+      width: 282px;
+    }
+
+    .sign-in_form input{
+      width: 240px;
+    }
+    .sign-in_form button{
+      width: 240px;
+    }
   }

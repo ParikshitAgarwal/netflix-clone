@@ -10,7 +10,7 @@ const Banner = () => {
   }
 
   useEffect(() => {
-    fetch(`${requests.fetchTrending}`)
+    fetch(`${requests.fetchActionMovies}`)
       .then((res) => res.json())
       .then((data) => {
         const result =
@@ -28,6 +28,7 @@ const Banner = () => {
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
         backgroundSize: "cover",
         backgroundPosition: "center center",
+        
       }}
     >
       <div className="banner_content">

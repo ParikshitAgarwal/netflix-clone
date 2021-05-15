@@ -19,25 +19,27 @@ background-color: #111;
     justify-content: space-between;
 }
 
-.nav_content button{
+.logout_btn{
 position: fixed;
-
+right: 80px;
 color: white;
-left: 89%;
-margin-right: 20px;
 cursor: pointer;
 background-color: transparent;
 border-radius: 4px;
 font-weight: bold;
 padding: 10px 20px;
-
+top: 15px;
+font-weight: 900;
 }
+
+
 .nav_logo{
     width: 200px;
     cursor: pointer;
     position: fixed;
     padding-left: 20px;
     left: 0;
+    z-index: 100;
     top: -10px;
    
 }
@@ -48,4 +50,20 @@ padding: 10px 20px;
     position: fixed;
     right: 20px;
     top: 15px;
+    z-index: 100;
+}
+
+@media screen and (max-width:580px) {
+    .nav_logo{
+        width: 120px;
+        padding-left: 0px;
+    }
+    .nav_avatar{
+        visibility: hidden;
+    }
+    .logout_btn{
+        right: 10px;
+      
+        padding: 5px 10px;
+    }
 }
