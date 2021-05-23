@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import { useState, useEffect } from "react";
 import { auth } from "./firebase";
+import SearchPage from "./components/SearchPage";
 
 function App() {
   const [user, setUser] = useState("");
@@ -25,7 +26,17 @@ function App() {
         {!user ? (
           <SignIn />
         ) : (
-         <Home />
+          <>
+      
+          <Switch>
+            <Route exact path="/">
+          <Home />
+          </Route>
+            <Route path="/search">
+         <SearchPage />
+         </Route>
+         </Switch>
+         </>
         )}
       </Router>
     </div>

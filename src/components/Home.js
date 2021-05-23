@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import Row from "./Row";
 
 const Home = () => {
+  
   return (
     <div className="home">
       <Navbar />
@@ -21,6 +22,8 @@ const Home = () => {
       <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
       <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
+      
+      
     
     </div>
   );
