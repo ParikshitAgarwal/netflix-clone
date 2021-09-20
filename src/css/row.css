@@ -56,6 +56,12 @@
   left: 0%;
   z-index: 1;
 }
+.overlay i {
+  position: absolute;
+  right: 20px;
+  font-size: 1.5rem;
+  bottom: 30px;
+}
 
 .row_poster:hover {
   transform: scale(1.2);
