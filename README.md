@@ -1,4 +1,4 @@
-# Netflix Clone
+# Introdution
 Netflix clone is a website to get recommendations and search top rated movies and Tv Series.
 
 I have used the TMDB Api to fetch all the movie and tv series data.
